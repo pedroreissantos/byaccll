@@ -1,0 +1,574 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.4	//
+AR	Makefile	/^AR = ar$/;"	m
+AR_FLAGS	Makefile	/^AR_FLAGS = qv$/;"	m
+BACKSLASH	defs.h	43;"	d
+BIT	defs.h	27;"	d
+BITS_PER_WORD	defs.h	25;"	d
+BS	defs.h	36;"	d
+CALLOC	defs.h	101;"	d
+CFLAGS	Makefile	/^CFLAGS	      = -g$/;"	m
+CODE_SUFFIX	defs.h	48;"	d
+CR	defs.h	39;"	d
+DEFINES_SUFFIX	defs.h	49;"	d
+DEST	Makefile	/^depend:;	@mkmf -f $(MAKEFILE) PROGRAM=$(PROGRAM) DEST=$(DEST)$/;"	m
+DOUBLE_QUOTE	defs.h	42;"	d
+EFF	closure.c	/^static unsigned *EFF;$/;"	v	file:
+EXEEXT	Makefile	/^EXEEXT = .exe$/;"	m
+F	lalr.c	/^static unsigned *F;$/;"	v	file:
+FF	defs.h	40;"	d
+FREE	defs.h	102;"	d
+HDRS	Makefile	/^HDRS	      = defs.h$/;"	m
+HT	defs.h	37;"	d
+IDENT	defs.h	65;"	d
+INDEX	lalr.c	/^static short *INDEX;$/;"	v	file:
+INSTALL	Makefile	/^INSTALL = \/bin\/install.exe -cpD$/;"	m
+INSTALL_DATA	Makefile	/^INSTALL_DATA = \/bin\/install.exe -cp$/;"	m
+INSTALL_PROGRAM	Makefile	/^INSTALL_PROGRAM = \/bin\/install.exe -cpsD$/;"	m
+ISTOKEN	defs.h	95;"	d
+ISVAR	defs.h	96;"	d
+IS_IDENT	defs.h	88;"	d
+IS_OCTAL	defs.h	89;"	d
+L2	sl.y	/^L2: ',' S L2 { printf("continuacao\\n"); }$/;"	l
+LA	lalr.c	/^unsigned *LA;$/;"	v
+LAruleno	lalr.c	/^short *LAruleno;$/;"	v
+LDFLAGS	Makefile	/^LDFLAGS	      =$/;"	m
+LEFT	defs.h	57;"	d
+LIBS	Makefile	/^LIBS	      =$/;"	m
+LINESIZE	reader.c	8;"	d	file:
+LINKER	Makefile	/^LINKER	      = $(CC)$/;"	m
+LR0	verbose.c	/^static short LR0shift, LR0reduce, *LR0, LR0s;$/;"	v	file:
+LR0reduce	verbose.c	/^static short LR0shift, LR0reduce, *LR0, LR0s;$/;"	v	file:
+LR0s	verbose.c	/^static short LR0shift, LR0reduce, *LR0, LR0s;$/;"	v	file:
+LR0shift	verbose.c	/^static short LR0shift, LR0reduce, *LR0, LR0s;$/;"	v	file:
+MAKEFILE	Makefile	/^MAKEFILE      = Makefile$/;"	m
+MAKEINFO	Makefile	/^MAKEINFO = makeinfo$/;"	m
+MALLOC	defs.h	103;"	d
+MARK	defs.h	60;"	d
+MAXCHAR	defs.h	21;"	d
+MAXSHORT	defs.h	22;"	d
+MAXTABLE	defs.h	24;"	d
+MINSHORT	defs.h	23;"	d
+MORE_CFLAGS	Makefile	/^MORE_CFLAGS   = -DNDEBUG  -DRETSIGTYPE=void$/;"	m
+NEW	defs.h	104;"	d
+NEW2	defs.h	105;"	d
+NEWLINE	defs.h	34;"	d
+NONASSOC	defs.h	59;"	d
+NONTERM	defs.h	72;"	d
+NUL	defs.h	33;"	d
+NUMERIC_VALUE	defs.h	90;"	d
+OBJS	Makefile	/^OBJS	      = closure.o \\$/;"	m
+OUTPUT_SUFFIX	defs.h	50;"	d
+PRINT	Makefile	/^PRINT	      = pr -f -l88$/;"	m
+PROGRAM	Makefile	/^PROGRAM	      = byacc$(EXEEXT)$/;"	m
+PROGRAM	Makefile	/^depend:;	@mkmf -f $(MAKEFILE) PROGRAM=$(PROGRAM) DEST=$(DEST)$/;"	m
+QUOTE	defs.h	41;"	d
+R	lalr.c	/^static short **R;$/;"	v	file:
+REALLOC	defs.h	106;"	d
+REDUCE	defs.h	83;"	d
+RIGHT	defs.h	58;"	d
+RRconflicts	mkpar.c	/^short *RRconflicts;$/;"	v
+RRcount	mkpar.c	/^static int RRcount;$/;"	v	file:
+RRtotal	mkpar.c	/^int RRtotal;$/;"	v
+SETBIT	defs.h	28;"	d
+SHELL	Makefile	/^SHELL = \/bin\/sh$/;"	m
+SHIFT	defs.h	82;"	d
+SLR	verbose.c	/^static short SLRshift, SLRreduce, *SLR;$/;"	v	file:
+SLRreduce	verbose.c	/^static short SLRshift, SLRreduce, *SLR;$/;"	v	file:
+SLRshift	verbose.c	/^static short SLRshift, SLRreduce, *SLR;$/;"	v	file:
+SP	defs.h	35;"	d
+SRCS	Makefile	/^SRCS	      = closure.c \\$/;"	m
+SRconflicts	mkpar.c	/^short *SRconflicts;$/;"	v
+SRcount	mkpar.c	/^static int SRcount;$/;"	v	file:
+SRtotal	mkpar.c	/^int SRtotal;$/;"	v
+STAGESTUFF	Makefile	/^STAGESTUFF = $(OBJS) $(PROGRAM)$/;"	m
+START	defs.h	63;"	d
+TABLE_SIZE	symtab.c	7;"	d	file:
+TERM	defs.h	71;"	d
+TEXT	defs.h	61;"	d
+TOKEN	defs.h	56;"	d
+TYPE	defs.h	62;"	d
+UNDEFINED	defs.h	77;"	d
+UNION	defs.h	64;"	d
+UNKNOWN	defs.h	70;"	d
+VERBOSE_SUFFIX	defs.h	51;"	d
+VERTICES	lalr.c	/^static short *VERTICES;$/;"	v	file:
+VT	defs.h	38;"	d
+WORDSIZE	defs.h	26;"	d
+YYAND	y.code.c	11;"	d	file:
+YYAND	y.code.c	5;"	d	file:
+YYBYACC	y.code.c	17;"	d	file:
+YYCONST	y.code.c	2;"	d	file:
+YYCONST	y.code.c	8;"	d	file:
+YYDEFUN	y.code.c	10;"	d	file:
+YYDEFUN	y.code.c	4;"	d	file:
+YYERRCODE	y.code.c	29;"	d	file:
+YYPARAMS	y.code.c	3;"	d	file:
+YYPARAMS	y.code.c	9;"	d	file:
+YYPTR	y.code.c	12;"	d	file:
+YYPTR	y.code.c	6;"	d	file:
+YYSTYPE	y.code.c	/^typedef int YYSTYPE;$/;"	t	file:
+accessing_symbol	defs.h	/^    short accessing_symbol;$/;"	m	struct:core
+accessing_symbol	lalr.c	/^short *accessing_symbol;$/;"	v
+action	defs.h	/^struct action$/;"	s
+action	defs.h	/^typedef struct action action;$/;"	t
+action_code	defs.h	/^    char action_code;$/;"	m	struct:action
+action_file	main.c	/^FILE *action_file;	\/*  a temp file, used to save actions associated    *\/$/;"	v
+action_file_name	main.c	/^char *action_file_name;$/;"	v
+add_lookback_edge	lalr.c	/^add_lookback_edge(stateno, ruleno, gotono)$/;"	f
+add_reduce	mkpar.c	/^add_reduce(actions, ruleno, symbol)$/;"	f
+add_reductions	mkpar.c	/^add_reductions(stateno, actions)$/;"	f
+add_symbol	reader.c	/^add_symbol()$/;"	f
+advance_to_start	reader.c	/^advance_to_start()$/;"	f
+allocate	main.c	/^allocate(n)$/;"	f
+allocate_itemsets	lr0.c	/^allocate_itemsets()$/;"	f
+allocate_storage	lr0.c	/^allocate_storage()$/;"	f
+append_states	lr0.c	/^append_states()$/;"	f
+assoc	defs.h	/^    char assoc;$/;"	m	struct:action
+assoc	defs.h	/^    char assoc;$/;"	m	struct:bucket
+banner	skeleton.c	/^char *banner[] =$/;"	v
+base	output.c	/^static short *base;$/;"	v	file:
+begin_action	reader.c	/^begin_action() {$/;"	f	file:
+bindir	Makefile	/^bindir = ${exec_prefix}\/bin$/;"	m
+block	frac.y	/^block	: instrs loop		{ $$ = subNode(INSTR, 2, $1, $2); }$/;"	l
+body	frac.y	/^body	: vars ';' instrs ret$/;"	l
+body	skeleton.c	/^char *body[] =$/;"	v
+bucket	defs.h	/^struct bucket$/;"	s
+bucket	defs.h	/^typedef struct bucket bucket;$/;"	t
+build_relations	lalr.c	/^build_relations()$/;"	f
+byacc_getargs	main.c	/^byacc_getargs(argc, argv)$/;"	f
+cache	reader.c	/^char *cache;$/;"	v
+cache_size	reader.c	/^int cinc, cache_size;$/;"	v
+cachec	reader.c	/^cachec(c)$/;"	f
+char	frac.y	/^char	: INT			{ $$ = TINT($1); }$/;"	l
+chars	frac.y	/^chars	: char			{ $$ = subNode(STR, 2,  0, $1); }$/;"	l
+check	output.c	/^static short *check;$/;"	v	file:
+check_symbols	reader.c	/^check_symbols()$/;"	f
+cinc	reader.c	/^int cinc, cache_size;$/;"	v
+closure	closure.c	/^closure(nucleus, n)$/;"	f
+code_file	main.c	/^FILE *code_file;	\/*  y.code.c (used when the -r option is specified) *\/$/;"	v
+code_file_name	main.c	/^char *code_file_name;$/;"	v
+compute_FOLLOWS	lalr.c	/^compute_FOLLOWS()$/;"	f
+compute_firsts	ll1.c	/^static int compute_firsts(short *first, int rule)$/;"	f	file:
+compute_lookaheads	lalr.c	/^compute_lookaheads()$/;"	f
+const	frac.y	/^const	:			{ $$ = 0; }$/;"	l
+copy_action	reader.c	/^copy_action()$/;"	f
+copy_ident	reader.c	/^copy_ident()$/;"	f
+copy_text	reader.c	/^copy_text()$/;"	f
+copy_union	reader.c	/^copy_union()$/;"	f
+core	defs.h	/^struct core$/;"	s
+core	defs.h	/^typedef struct core core;$/;"	t
+cptr	reader.c	/^char *cptr, *line;$/;"	v
+create_file_names	main.c	/^create_file_names()$/;"	f
+create_symbol_table	symtab.c	/^create_symbol_table()$/;"	f
+data	y.code.c	/^static void *data;$/;"	v	file:
+datadir	Makefile	/^datadir = ${prefix}\/share$/;"	m
+decl	frac.y	/^decl	: const qualif vardecl$/;"	l
+declare_start	reader.c	/^declare_start()$/;"	f
+declare_tokens	reader.c	/^declare_tokens(assoc)$/;"	f
+declare_types	reader.c	/^declare_types()$/;"	f
+decls	frac.y	/^decls	:			{ $$ = 0; }$/;"	l
+default_action	reader.c	/^default_action() {$/;"	f	file:
+default_action_warning	error.c	/^default_action_warning()$/;"	f
+default_goto	output.c	/^default_goto(symbol)$/;"	f
+defines_file	main.c	/^FILE *defines_file;	\/*  y.tab.h					    *\/$/;"	v
+defines_file_name	main.c	/^char *defines_file_name;$/;"	v
+defred	mkpar.c	/^short *defred;$/;"	v
+defreds	mkpar.c	/^defreds()$/;"	f
+derives	main.c	/^short **derives;$/;"	v
+dflag	main.c	/^char dflag;$/;"	v
+digraph	lalr.c	/^digraph(relation)$/;"	f
+dollar_error	error.c	/^dollar_error(a_lineno, a_line, a_cptr)$/;"	f
+dollar_warning	error.c	/^dollar_warning(a_lineno, i)$/;"	f
+done	main.c	/^done(k)$/;"	f
+dup_line	reader.c	/^dup_line()$/;"	f
+e2	e2.y	/^e2	: INT ':' INT$/;"	l
+elifs	frac.y	/^elifs	:			{ $$ = 0; }$/;"	l
+else	frac.y	/^else	:			{ $$ = 0; }$/;"	l
+emitident	main.c	/^char emitident;$/;"	v
+end_action	reader.c	/^end_action() {$/;"	f	file:
+end_rule	reader.c	/^end_rule()$/;"	f
+eqbody	frac.y	/^eqbody	:			{ $$ = 0; }$/;"	l
+eqfrac	frac.y	/^eqfrac	:			{ $$ = 0; }$/;"	l
+eqint	frac.y	/^eqint	:			{ $$ = 0; }$/;"	l
+eqstr	frac.y	/^eqstr	:			{ $$ = 0; }$/;"	l
+errcnt	ll1.c	/^static short errcnt;$/;"	v	file:
+error	y.code.c	65;"	d	file:
+exec_prefix	Makefile	/^exec_prefix = ${prefix}$/;"	m
+expand_items	reader.c	/^expand_items()$/;"	f
+expand_rules	reader.c	/^expand_rules()$/;"	f
+explicit_file_name	main.c	/^int explicit_file_name;$/;"	v
+expr	frac.y	/^expr	: chars			{ $$ = $1; }$/;"	l
+exprs	frac.y	/^exprs	: expr			{ $$ = subNode(',', 2,  0, $1); }$/;"	l
+fatal	error.c	/^fatal(msg)$/;"	f
+file	e2.y	/^file:$/;"	l
+file	frac.y	/^file	: PROGRAM decls START main END$/;"	l
+file_prefix	main.c	/^char *file_prefix = "y";$/;"	v
+final_state	mkpar.c	/^short final_state;$/;"	v
+finalize_closure	closure.c	/^finalize_closure()$/;"	f
+find_final_state	mkpar.c	/^find_final_state()$/;"	f
+find_symbol	ll1.c	/^static int find_symbol(int i)$/;"	f	file:
+first_derives	closure.c	/^static unsigned *first_derives;$/;"	v	file:
+first_reduction	lr0.c	/^reductions *first_reduction;$/;"	v
+first_shift	lr0.c	/^shifts *first_shift;$/;"	v
+first_state	lr0.c	/^core *first_state;$/;"	v
+first_symbol	symtab.c	/^bucket *first_symbol;$/;"	v
+fol	ll1.c	/^static short *fol;$/;"	v	file:
+follow	ll1.c	/^short *follow(int symbol)$/;"	f
+frac	frac.y	/^frac	: INT ':'		{ $$ = subNode(FRAC, 2, TINT($1), TINT(1)); }$/;"	l
+fraction	frac.y	/^fraction: FRACTION ID eqfrac	{ $$ = subNode(FRACTION, 3, TINT(tFRAC), TID($2), $3); }$/;"	l
+free_action_row	mkpar.c	/^free_action_row(p)$/;"	f
+free_derives	lr0.c	/^free_derives()$/;"	f
+free_itemsets	output.c	/^free_itemsets()$/;"	f
+free_nullable	lr0.c	/^free_nullable()$/;"	f
+free_parser	mkpar.c	/^free_parser()$/;"	f
+free_reductions	output.c	/^free_reductions()$/;"	f
+free_shifts	output.c	/^free_shifts()$/;"	f
+free_storage	lr0.c	/^free_storage()$/;"	f
+free_symbol_table	symtab.c	/^free_symbol_table()$/;"	f
+free_symbols	symtab.c	/^free_symbols()$/;"	f
+free_tags	reader.c	/^free_tags()$/;"	f
+from_state	lalr.c	/^short *from_state;$/;"	v
+froms	output.c	/^static short **froms;$/;"	v	file:
+ftype	frac.y	/^ftype	: type			{ $$ = $1; }$/;"	l
+gdecls	frac.y	/^gdecls	: gdecls ';' decl	{ $$ = subNode(DECL, 2, $1, $3); }$/;"	l
+generate_states	lr0.c	/^generate_states()$/;"	f
+gensym	reader.c	/^int gensym;$/;"	v
+get_line	reader.c	/^get_line()$/;"	f
+get_literal	reader.c	/^get_literal()$/;"	f
+get_name	reader.c	/^get_name()$/;"	f
+get_number	reader.c	/^get_number()$/;"	f
+get_shifts	mkpar.c	/^get_shifts(stateno)$/;"	f
+get_state	lr0.c	/^get_state(symbol)$/;"	f
+get_tag	reader.c	/^get_tag()$/;"	f
+goal	reader.c	/^bucket *goal;$/;"	v
+goto_actions	output.c	/^goto_actions()$/;"	f
+goto_map	lalr.c	/^short *goto_map;$/;"	v
+hard_actions	hardcode.c	/^hard_actions(stateno)$/;"	f	file:
+hard_end	hardcode.c	/^static char hard_end[] =$/;"	v	file:
+hard_error	hardcode.c	/^hard_error()$/;"	f	file:
+hard_error1	hardcode.c	/^static char hard_error1[] =$/;"	v	file:
+hard_error2	hardcode.c	/^static char hard_error2[] =$/;"	v	file:
+hard_error3	hardcode.c	/^static char hard_error3[] =$/;"	v	file:
+hard_gotos	hardcode.c	/^hard_gotos()$/;"	f	file:
+hard_init	hardcode.c	/^static char hard_init[] =$/;"	v	file:
+hard_stack	hardcode.c	/^static char hard_stack[] =$/;"	v	file:
+hard_stack_old	hardcode.c	/^static char hard_stack_old[] =$/;"	v	file:
+hard_state	hardcode.c	/^hard_state(state)$/;"	f	file:
+hardcode	hardcode.c	/^hardcode()$/;"	f
+hash	symtab.c	/^hash(name)$/;"	f
+header	skeleton.c	/^char *header[] =$/;"	v
+hexval	reader.c	/^hexval(c)$/;"	f
+hflag	main.c	/^char hflag;$/;"	v
+high	output.c	/^static int high;$/;"	v	file:
+illegal_character	error.c	/^illegal_character(c_cptr)$/;"	f
+illegal_tag	error.c	/^illegal_tag(t_lineno, t_line, t_cptr)$/;"	f
+includedir	Makefile	/^includedir = ${prefix}\/include$/;"	m
+includes	lalr.c	/^static short **includes;$/;"	v	file:
+index	defs.h	/^    short index;$/;"	m	struct:bucket
+infinity	lalr.c	/^static int infinity;$/;"	v	file:
+infodir	Makefile	/^infodir = ${prefix}\/info$/;"	m
+initialize_F	lalr.c	/^initialize_F()$/;"	f
+initialize_LA	lalr.c	/^initialize_LA()$/;"	f
+initialize_grammar	reader.c	/^initialize_grammar()$/;"	f
+initialize_states	lr0.c	/^initialize_states()$/;"	f
+input	y.code.c	/^static int (*input)(void*);$/;"	v	file:
+input_file	main.c	/^FILE *input_file;	\/*  the input file				    *\/$/;"	v
+input_file_name	main.c	/^char *input_file_name = "";$/;"	v
+insert_empty_rule	reader.c	/^insert_empty_rule()$/;"	f
+instr	frac.y	/^instr	: IF expr THEN block elifs else FI$/;"	l
+instrs	frac.y	/^instrs	:			{ $$ = 0; }$/;"	l
+is_C_identifier	output.c	/^is_C_identifier(name)$/;"	f
+is_reserved	reader.c	/^is_reserved(name)$/;"	f
+items	defs.h	/^    short items[1];$/;"	m	struct:core
+itemset	closure.c	/^short *itemset;$/;"	v
+itemsetend	closure.c	/^short *itemsetend;$/;"	v
+kernel_base	lr0.c	/^static short **kernel_base;$/;"	v	file:
+kernel_end	lr0.c	/^static short **kernel_end;$/;"	v	file:
+kernel_items	lr0.c	/^static short *kernel_items;$/;"	v	file:
+keyword	reader.c	/^keyword()$/;"	f
+lalr	lalr.c	/^lalr()$/;"	f
+last_nitem	reader.c	/^static int last_nitem;$/;"	v	file:
+last_reduction	lr0.c	/^static reductions *last_reduction;$/;"	v	file:
+last_shift	lr0.c	/^static shifts *last_shift;$/;"	v	file:
+last_state	lr0.c	/^static core *last_state;$/;"	v	file:
+last_symbol	symtab.c	/^bucket *last_symbol;$/;"	v
+last_was_action	reader.c	/^char last_was_action;$/;"	v
+lflag	main.c	/^char lflag;$/;"	v
+libdir	Makefile	/^libdir = ${exec_prefix}\/lib$/;"	m
+line	reader.c	/^char *cptr, *line;$/;"	v
+line_format	reader.c	/^char line_format[] = "#line %d \\"%s\\"\\n";$/;"	v
+lineno	defs.h	/^    int lineno;$/;"	m	struct:bucket
+lineno	main.c	/^int lineno;$/;"	v
+linesize	reader.c	/^int linesize;$/;"	v
+link	defs.h	/^    struct bucket *link;$/;"	m	struct:bucket
+link	defs.h	/^    struct core *link;$/;"	m	struct:core
+ll1	ll1.c	/^void ll1()$/;"	f
+ll1hard	ll1.c	/^void ll1hard()$/;"	f
+ll1table	ll1.c	/^static void ll1table()$/;"	f	file:
+ll_L	y.code.c	/^static int ll_L()$/;"	f	file:
+ll_L2	y.code.c	/^static int ll_L2()$/;"	f	file:
+ll_S	y.code.c	/^static int ll_S()$/;"	f	file:
+ll_action	y.code.c	/^static void ll_action(int yyn) {$/;"	f	file:
+ll_error	y.code.c	/^static int ll_error() {$/;"	f	file:
+ll_parse	y.code.c	/^int ll_parse(int (*inp)(void*), void *ind) {$/;"	f
+log_conflicts	verbose.c	/^log_conflicts()$/;"	f
+log_unused	verbose.c	/^log_unused()$/;"	f
+lookaheads	lalr.c	/^short *lookaheads;$/;"	v
+lookback	lalr.c	/^static shorts **lookback;$/;"	v	file:
+lookup	symtab.c	/^lookup(name)$/;"	f
+loop	frac.y	/^loop	:			{ $$ = 0; }$/;"	l
+lowzero	output.c	/^static int lowzero;$/;"	v	file:
+lr0	lr0.c	/^lr0()$/;"	f
+lval	frac.y	/^lval	: ID                    { $$ = TID($1); }$/;"	l
+main	frac.y	/^main	: vars ';' instrs$/;"	l
+main	main.c	/^main(argc, argv)$/;"	f
+main	y.code.c	/^int main() { yydebug=1; return yyparse(); }$/;"	f
+make_bucket	symtab.c	/^make_bucket(name)$/;"	f
+make_parser	mkpar.c	/^make_parser()$/;"	f
+man1dir	Makefile	/^man1dir = $(mandir)\/man1$/;"	m
+man2dir	Makefile	/^man2dir = $(mandir)\/man2$/;"	m
+man3dir	Makefile	/^man3dir = $(mandir)\/man3$/;"	m
+man4dir	Makefile	/^man4dir = $(mandir)\/man4$/;"	m
+man5dir	Makefile	/^man5dir = $(mandir)\/man5$/;"	m
+man6dir	Makefile	/^man6dir = $(mandir)\/man6$/;"	m
+man7dir	Makefile	/^man7dir = $(mandir)\/man7$/;"	m
+man8dir	Makefile	/^man8dir = $(mandir)\/man8$/;"	m
+man9dir	Makefile	/^man9dir = $(mandir)\/man9$/;"	m
+mandir	Makefile	/^mandir = ${prefix}\/man$/;"	m
+map_goto	lalr.c	/^map_goto(state, symbol)$/;"	f
+mark_symbol	reader.c	/^mark_symbol()$/;"	f
+matching_vector	output.c	/^matching_vector(vector)$/;"	f
+maxitems	reader.c	/^int maxitems;$/;"	v
+maxrhs	lalr.c	/^static int maxrhs;$/;"	v	file:
+maxrules	reader.c	/^int maxrules;$/;"	v
+maxtable	output.c	/^static int maxtable;$/;"	v	file:
+myname	main.c	/^char *myname = "yacc";$/;"	v
+name	defs.h	/^    char *name;$/;"	m	struct:bucket
+name_pool	reader.c	/^char *name_pool;$/;"	v
+name_pool_size	reader.c	/^int name_pool_size;$/;"	v
+nentries	output.c	/^static int nentries;$/;"	v	file:
+new_itemsets	lr0.c	/^new_itemsets()$/;"	f
+new_state	lr0.c	/^new_state(symbol)$/;"	f
+next	defs.h	/^    struct action *next;$/;"	m	struct:action
+next	defs.h	/^    struct bucket *next;$/;"	m	struct:bucket
+next	defs.h	/^    struct core *next;$/;"	m	struct:core
+next	defs.h	/^    struct reductions *next;$/;"	m	struct:reductions
+next	defs.h	/^    struct shifts *next;$/;"	m	struct:shifts
+next	lalr.c	/^      struct shorts *next;$/;"	m	struct:shorts	file:
+nextc	reader.c	/^nextc()$/;"	f
+ngotos	lalr.c	/^static int ngotos;$/;"	v	file:
+nitems	defs.h	/^    short nitems;$/;"	m	struct:core
+nitems	main.c	/^int nitems;$/;"	v
+no_grammar	error.c	/^no_grammar()$/;"	f
+no_space	error.c	/^no_space()$/;"	f
+nreds	defs.h	/^    short nreds;$/;"	m	struct:reductions
+nrules	main.c	/^int nrules;$/;"	v
+nshifts	defs.h	/^    short nshifts;$/;"	m	struct:shifts
+nshifts	lr0.c	/^static int nshifts;$/;"	v	file:
+nstates	lr0.c	/^int nstates;$/;"	v
+nsyms	main.c	/^int nsyms;$/;"	v
+ntags	reader.c	/^int ntags, tagmax;$/;"	v
+ntokens	main.c	/^int ntokens;$/;"	v
+null_rules	verbose.c	/^static short *null_rules;$/;"	v	file:
+nullable	main.c	/^char *nullable;$/;"	v
+number	defs.h	/^    short number;$/;"	m	struct:action
+number	defs.h	/^    short number;$/;"	m	struct:core
+number	defs.h	/^    short number;$/;"	m	struct:reductions
+number	defs.h	/^    short number;$/;"	m	struct:shifts
+number	frac.y	/^number	: NUMBER ID eqint	{ $$ = subNode(NUMBER, 3, TINT(tINT), TID($2), $3); }$/;"	l
+nunused	mkpar.c	/^short nunused;$/;"	v
+nvars	main.c	/^int nvars;$/;"	v
+nvectors	output.c	/^static int nvectors;$/;"	v	file:
+onintr	main.c	/^onintr()$/;"	f
+open_error	error.c	/^open_error(filename)$/;"	f
+open_files	main.c	/^open_files()$/;"	f
+order	output.c	/^static short *order;$/;"	v	file:
+outline	main.c	/^int outline;$/;"	v
+output	output.c	/^output()$/;"	f
+output_actions	output.c	/^output_actions()$/;"	f
+output_base	output.c	/^output_base()$/;"	f
+output_check	output.c	/^output_check()$/;"	f
+output_debug	output.c	/^output_debug()$/;"	f
+output_defines	output.c	/^output_defines()$/;"	f
+output_file	main.c	/^FILE *output_file;	\/*  y.tab.c					    *\/$/;"	v
+output_file_name	main.c	/^char *output_file_name;$/;"	v
+output_rule_data	output.c	/^output_rule_data()$/;"	f
+output_semantic_actions	output.c	/^output_semantic_actions()$/;"	f
+output_stored_text	output.c	/^output_stored_text()$/;"	f
+output_stype	output.c	/^output_stype()$/;"	f
+output_table	output.c	/^output_table()$/;"	f
+output_trailing_text	output.c	/^output_trailing_text()$/;"	f
+output_yydefred	output.c	/^output_yydefred()$/;"	f
+over_unionized	error.c	/^over_unionized(u_cptr)$/;"	f
+pack_grammar	reader.c	/^pack_grammar()$/;"	f
+pack_names	reader.c	/^pack_names()$/;"	f
+pack_symbols	reader.c	/^pack_symbols()$/;"	f
+pack_table	output.c	/^pack_table()$/;"	f
+pack_vector	output.c	/^pack_vector(vector)$/;"	f
+par	par.y	/^par	: '[' par ']'$/;"	l
+par	par2.y	/^par	: '[' par ']'$/;"	l
+parse_actions	mkpar.c	/^parse_actions(stateno)$/;"	f
+parser	mkpar.c	/^action **parser;$/;"	v
+pflag	main.c	/^char pflag;$/;"	v
+pitem	reader.c	/^bucket **pitem;$/;"	v
+plhs	reader.c	/^bucket **plhs;$/;"	v
+pos	output.c	/^static short *pos;$/;"	v	file:
+prec	defs.h	/^    short prec;$/;"	m	struct:action
+prec	defs.h	/^    short prec;$/;"	m	struct:bucket
+prec	reader.c	/^int prec;$/;"	v
+prec_redeclared	error.c	/^prec_redeclared()$/;"	f
+prefix	Makefile	/^prefix = c:\/progra~1\/byacc$/;"	m
+print_EFF	closure.c	/^print_EFF()$/;"	f
+print_actions	verbose.c	/^print_actions(stateno)$/;"	f
+print_closure	closure.c	/^print_closure(n)$/;"	f
+print_conflicts	verbose.c	/^print_conflicts(state)$/;"	f
+print_core	verbose.c	/^print_core(state)$/;"	f
+print_derives	lr0.c	/^print_derives()$/;"	f
+print_first_derives	closure.c	/^print_first_derives()$/;"	f
+print_gotos	verbose.c	/^print_gotos(stateno)$/;"	f
+print_grammar	reader.c	/^print_grammar()$/;"	f
+print_nulls	verbose.c	/^print_nulls(state)$/;"	f
+print_pos	error.c	/^print_pos(st_line, st_cptr)$/;"	f
+print_reductions	verbose.c	/^print_reductions(p, defred)$/;"	f
+print_shifts	verbose.c	/^print_shifts(p)$/;"	f
+print_state	verbose.c	/^print_state(state)$/;"	f
+prog	par.y	/^prog	:$/;"	l
+prog	par2.y	/^prog	:$/;"	l
+qualif	frac.y	/^qualif	: PUBLIC		{ $$ = nilNode(PUBLIC); }$/;"	l
+rassoc	main.c	/^char  *rassoc;$/;"	v
+read_declarations	reader.c	/^read_declarations()$/;"	f
+read_grammar	reader.c	/^read_grammar()$/;"	f
+reader	reader.c	/^reader()$/;"	f
+redset	lr0.c	/^static short *redset;$/;"	v	file:
+reduction_table	lalr.c	/^reductions **reduction_table;$/;"	v
+reductions	defs.h	/^struct reductions$/;"	s
+reductions	defs.h	/^typedef struct reductions reductions;$/;"	t
+reflexive_transitive_closure	warshall.c	/^reflexive_transitive_closure(R, n)$/;"	f
+remove_conflicts	mkpar.c	/^remove_conflicts()$/;"	f
+reprec_warning	error.c	/^reprec_warning(s)$/;"	f
+restarted_warning	error.c	/^restarted_warning()$/;"	f
+ret	frac.y	/^ret	: RETURN		{ $$ = subNode(RETURN, 1,  0); }$/;"	l
+retyped_warning	error.c	/^retyped_warning(s)$/;"	f
+revalued_warning	error.c	/^revalued_warning(s)$/;"	f
+rflag	main.c	/^char rflag;$/;"	v
+ritem	main.c	/^short *ritem;$/;"	v
+rlhs	main.c	/^short *rlhs;$/;"	v
+rprec	main.c	/^short *rprec;$/;"	v
+rrhs	main.c	/^short *rrhs;$/;"	v
+rules	defs.h	/^    short rules[1];$/;"	m	struct:reductions
+rules_used	mkpar.c	/^short *rules_used;$/;"	v
+ruleset	closure.c	/^unsigned *ruleset;$/;"	v
+save_column	output.c	/^save_column(symbol, default_state)$/;"	f
+save_reductions	lr0.c	/^save_reductions()$/;"	f
+save_shifts	lr0.c	/^save_shifts()$/;"	f
+saw_eof	reader.c	/^char saw_eof, unionized;$/;"	v
+set_EFF	closure.c	/^set_EFF()$/;"	f
+set_accessing_symbol	lalr.c	/^set_accessing_symbol()$/;"	f
+set_derives	lr0.c	/^set_derives()$/;"	f
+set_first_derives	closure.c	/^set_first_derives()$/;"	f
+set_goto_map	lalr.c	/^set_goto_map()$/;"	f
+set_maxrhs	lalr.c	/^set_maxrhs()$/;"	f
+set_nullable	lr0.c	/^set_nullable()$/;"	f
+set_reduction_table	lalr.c	/^set_reduction_table()$/;"	f
+set_shift_table	lalr.c	/^set_shift_table()$/;"	f
+set_signals	main.c	/^set_signals()$/;"	f
+set_state_table	lalr.c	/^set_state_table()$/;"	f
+shift	defs.h	/^    short shift[1];$/;"	m	struct:shifts
+shift_state	hardcode.c	/^static char *shift_state;$/;"	v	file:
+shift_symbol	lr0.c	/^static short *shift_symbol;$/;"	v	file:
+shift_table	lalr.c	/^shifts **shift_table;$/;"	v
+shifts	defs.h	/^struct shifts$/;"	s
+shifts	defs.h	/^typedef struct shifts shifts;$/;"	t
+shiftset	lr0.c	/^static short *shiftset;$/;"	v	file:
+shiftstates	hardcode.c	/^shiftstates()$/;"	f
+shorts	lalr.c	/^  shorts;$/;"	t	file:
+shorts	lalr.c	/^  struct shorts$/;"	s	file:
+show_cores	lr0.c	/^show_cores()$/;"	f
+show_ritems	lr0.c	/^show_ritems()$/;"	f
+show_rrhs	lr0.c	/^show_rrhs()$/;"	f
+show_shifts	lr0.c	/^show_shifts()$/;"	f
+skip_comment	reader.c	/^skip_comment()$/;"	f
+sole_reduction	mkpar.c	/^sole_reduction(stateno)$/;"	f
+sort_actions	output.c	/^sort_actions()$/;"	f
+srcdir	Makefile	/^srcdir = .$/;"	m
+start_rule	reader.c	/^start_rule(bp, s_lineno)$/;"	f
+start_symbol	main.c	/^int   start_symbol;$/;"	v
+state_count	output.c	/^static short *state_count;$/;"	v	file:
+state_set	lr0.c	/^static core **state_set;$/;"	v	file:
+state_table	lalr.c	/^core **state_table;$/;"	v
+step	frac.y	/^step	:			{ $$ = 0; }$/;"	l
+string	frac.y	/^string	: STRING ID eqstr	{ $$ = subNode(STRING, 3, TINT(tSTR), TID($2), $3); }$/;"	l
+suppressed	defs.h	/^    char suppressed;$/;"	m	struct:action
+symbol	defs.h	/^    short symbol;$/;"	m	struct:action
+symbol_assoc	main.c	/^char  *symbol_assoc;$/;"	v
+symbol_name	main.c	/^char  **symbol_name;$/;"	v
+symbol_prec	main.c	/^short *symbol_prec;$/;"	v
+symbol_table	symtab.c	/^bucket **symbol_table;$/;"	v
+symbol_value	main.c	/^short *symbol_value;$/;"	v
+syntax_error	error.c	/^syntax_error(st_lineno, st_line, st_cptr)$/;"	f
+table	output.c	/^static short *table;$/;"	v	file:
+tables	skeleton.c	/^char *tables[] =$/;"	v
+tag	defs.h	/^    char *tag;$/;"	m	struct:bucket
+tag_table	reader.c	/^char **tag_table;$/;"	v
+tagmax	reader.c	/^int ntags, tagmax;$/;"	v
+tally	output.c	/^static short *tally;$/;"	v	file:
+temp_form	main.c	/^char *temp_form = "yacc.XXXXXXX";$/;"	v
+terminal_lhs	error.c	/^terminal_lhs(s_lineno)$/;"	f
+terminal_start	error.c	/^terminal_start(s)$/;"	f
+text_file	main.c	/^FILE *text_file;	\/*  a temp file, used to save text until all	    *\/$/;"	v
+text_file_name	main.c	/^char *text_file_name;$/;"	v
+tflag	main.c	/^char tflag;$/;"	v
+this_state	lr0.c	/^static core *this_state;$/;"	v	file:
+to_state	lalr.c	/^short *to_state;$/;"	v
+token_actions	output.c	/^token_actions()$/;"	f
+tokenized_start	error.c	/^tokenized_start(s)$/;"	f
+tokensetsize	lalr.c	/^int tokensetsize;$/;"	v
+top	lalr.c	/^static int top;$/;"	v	file:
+tos	output.c	/^static short **tos;$/;"	v	file:
+total_conflicts	mkpar.c	/^total_conflicts()$/;"	f
+trailer	skeleton.c	/^char *trailer[] =$/;"	v
+transitive_closure	warshall.c	/^transitive_closure(R, n)$/;"	f
+transpose	lalr.c	/^transpose(R, n)$/;"	f
+traverse	lalr.c	/^traverse(i)$/;"	f
+type	frac.y	/^type	: NUMBER		{ $$ = intNode(STR, tINT); }$/;"	l
+undefined_goal	error.c	/^undefined_goal(s)$/;"	f
+undefined_symbol_warning	error.c	/^undefined_symbol_warning(s, l)$/;"	f
+unexpected_EOF	error.c	/^unexpected_EOF()$/;"	f
+union_file	main.c	/^FILE *union_file;	\/*  a temp file, used to save the union		    *\/$/;"	v
+union_file_name	main.c	/^char *union_file_name;$/;"	v
+unionized	reader.c	/^char saw_eof, unionized;$/;"	v
+unknown_rhs	error.c	/^unknown_rhs(i)$/;"	f
+unterminated_action	error.c	/^unterminated_action(a_lineno, a_line, a_cptr)$/;"	f
+unterminated_comment	error.c	/^unterminated_comment(c_lineno, c_line, c_cptr)$/;"	f
+unterminated_string	error.c	/^unterminated_string(s_lineno, s_line, s_cptr)$/;"	f
+unterminated_text	error.c	/^unterminated_text(t_lineno, t_line, t_cptr)$/;"	f
+unterminated_union	error.c	/^unterminated_union(u_lineno, u_line, u_cptr)$/;"	f
+untyped_lhs	error.c	/^untyped_lhs()$/;"	f
+untyped_rhs	error.c	/^untyped_rhs(i, s)$/;"	f
+unused_rules	mkpar.c	/^unused_rules()$/;"	f
+usage	main.c	/^usage()$/;"	f
+used_reserved	error.c	/^used_reserved(s)$/;"	f
+value	defs.h	/^    short value;$/;"	m	struct:bucket
+value	lalr.c	/^      short value;$/;"	m	struct:shorts	file:
+vardecl	frac.y	/^vardecl	: number		{ $$ = $1; }$/;"	l
+vars	frac.y	/^vars	: vardecl		{ $$ = subNode(VAR, 2,  0, $1); }$/;"	l
+verbose	verbose.c	/^verbose()$/;"	f
+verbose_file	main.c	/^FILE *verbose_file;	\/*  y.output					    *\/$/;"	v
+verbose_file_name	main.c	/^char *verbose_file_name;$/;"	v
+vflag	main.c	/^char vflag;$/;"	v
+width	output.c	/^static short *width;$/;"	v	file:
+write_section	skeleton.c	/^write_section(section)$/;"	f
+yaccversion	main.c	/^char *yaccversion = "Berkeley Yacc (+28-cygwin-990830)";$/;"	v
+yychar	y.code.c	/^static int yychar;$/;"	v	file:
+yydebug	y.code.c	/^int yydebug;$/;"	v
+yyerror	y.code.c	/^int yyerror(char*s) {printf("%s\\n", s);}$/;"	f
+yylex	y.code.c	/^int yylex() { int ch = getchar();$/;"	f
+yynerrs	y.code.c	/^int yynerrs;$/;"	v
+yyparse	y.code.c	/^int yyparse() { return ll_parse(yylex, 0); }$/;"	f
+yyrule	y.code.c	/^static YYCONST char *YYCONST yyrule[] = { "",$/;"	v	file:
+yysccsid	y.code.c	/^YYCONST static char yysccsid[] = "@(#)yaccpar	1.8 (Berkeley +Cygnus.28) 01\/20\/91";$/;"	v	file:

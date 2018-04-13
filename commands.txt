@@ -1,0 +1,9 @@
+vi ll1.c
+./byacc.exe -p -dv -l ll/ex1.y
+gcc -g -DYYDEBUG y.tab.c ll/lex.yy.c
+a.out < in
+
+(versao hardcoded)
+./byacc.exe -h -p -dv -l ll/ex1.y
+gcc -g -DYYDEBUG y.code.c ll/lex.yy.c
+a.out < in

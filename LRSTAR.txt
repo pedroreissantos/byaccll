@@ -1,0 +1,35 @@
+LRSTAR is a fast LALR(k) parser generator for C/C++ programmers, that 
+builds very fast compilers and language processors by using 
+compressed-matrix parser tables.  Creates compiler front-ends that 
+read source code at 1,000,000 lines per second. 
+
+LRSTAR reads the powerful TBNF grammar notation which facilitates 
+building an AST automatically and other advanced functionality. 
+Solves the "typedef" problem in C grammars. 
+
+The compiler front-end source code is in C++, however, a user may re- 
+write the skeleton file in another language, such as C, C#, Java, and 
+then generate code in that language.  Contains Microsoft Visual Studio 
+C/C++ work spaces. 
+
+DFASTAR and DFAC lexer generators are included in the downloads. 
+These generate very fast DFA lexical analyzers which read 30,000,000 
+tokens per second -- twice the speed of Flex. 
+
+LRSTAR is "open source" now, BSD license.  A windows version is 
+available at: 
+
+http://compilerware.com (the website) and 
+https://sourceforge.net/projects/lrstar/ 
+
+No one has ported it to Unix or Linux yet.  It may be 99% portable. 
+It was written with Microsoft Visual 
+Studio 2008 C++, however, I try to make my code portable. 
+
+To accomplish LALR(k) it uses nondeterminism only for those states 
+that are not LALR(1), so it's mostly LALR(1) and the parsers are small 
+and fast. 
+
+Comments are welcome and appreciated. 
+
+Paul B Mann
