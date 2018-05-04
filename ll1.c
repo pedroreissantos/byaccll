@@ -1,4 +1,15 @@
 #include "defs.h"
+void set_derives(void);
+void set_nullable(void);
+void output_stored_text(void);
+void output_stype(void);
+void output_defines(void);
+void output_debug(void);
+int is_C_identifier(char *name);
+void output_semantic_actions(void);
+void output_trailing_text(void);
+void done(int);
+
 
 static char hard_stack[] =
 	"#ifndef YYSTACKSIZE\n"
@@ -75,12 +86,16 @@ static int find_symbol(int i)
 }
 
 static short errcnt;
-static int compute_firsts(short *first, int rule, int mark)
+static int compute_firsts(short *first, int rule, int mark, int recurse)
 {
     register int item, symb;
     register short *sp;
     int count = 0;
 
+    if (++recurse > nrules + ntokens) {
+      printf("left recursion while processing rule %d.\n", rule-2);
+      exit(2);
+    }
     for (item = rrhs[rule]; ritem[item] >= 0; item++) {
       symb = ritem[item];
 
@@ -103,7 +118,7 @@ static int compute_firsts(short *first, int rule, int mark)
       }
 
       for (sp = derives[symb]; *sp >= 0; sp++)
-	count += compute_firsts(first, *sp, mark);
+	count += compute_firsts(first, *sp, mark, recurse);
 
       if (!nullable[symb]) return count;
     }
@@ -135,7 +150,7 @@ static void ll1table()
     output_stype();
     output_defines();
     output_debug();
-    fprintf(f,	hard_stack);
+    fputs(hard_stack, f);
     /* output tables */
     for (j = 0; j < ntokens; ++j)
       fprintf(f,  "/* %d -> %s */\n", j, symbol_name[j]);
@@ -185,8 +200,8 @@ static void ll1table()
       for (j = 0; j < nsyms; j++) confl[j] = first[j] = 0;
       count = 0;
       for (sp = derives[i]; *sp >= 0; sp++) {
-	compute_firsts(confl, *sp, -1);
-	if (compute_firsts(first, *sp, *sp) == 0)
+	compute_firsts(confl, *sp, -1, 0);
+	if (compute_firsts(first, *sp, *sp, 0) == 0)
 	  count = *sp;
       }
       if (nullable[i])
@@ -307,7 +322,7 @@ void ll1hard()
     output_stype();
     output_defines();
     output_debug();
-    fprintf(f,	hard_stack);
+    fputs(hard_stack, f);
     fprintf(f,	"int yydebug;\nstatic void ll_action(int yyn) {\n"
 		"#if YYDEBUG\n"
 		// "  YYSTYPE *s = stack; while (s < yyvsp) printf(\" %%d\", s->i), s++; printf(\"\\n\");\n"
@@ -360,7 +375,7 @@ fprintf(f, "  /* null = %d */ ll_action(%d);\n  return 0;\n}\n", null-2, i-3);
 	  target = rlhs[i];
 	  for (j = 0; j < nsyms; j++) first[j] = 0;
 	  for (sp = derives[target]; *sp >= 0; sp++)
-	    compute_firsts(first, *sp, *sp); /* grammar is factorized? */
+	    compute_firsts(first, *sp, *sp, 0); /* grammar is factorized? */
 	}
 	if (ritem[rrhs[i]] < 0) { /* empty rule */
 #ifdef DEBUG
@@ -390,7 +405,7 @@ fprintf(f, "  /* null = %d */ ll_action(%d);\n  return 0;\n}\n", null-2, i-3);
 	/* else ISTOKEN() printf(">>%s\n", symbol_name[ritem[rrhs[i]]], i); */
 
 	for (j = 0; j < nsyms; j++) first[j] = 0;
-	if (compute_firsts(first, i, 1) == 0) {
+	if (compute_firsts(first, i, 1, 0) == 0) {
 	  if (null) {
 	    printf("more than one nullable rule: %d and %d.\n", null, i);
 	    errcnt++;

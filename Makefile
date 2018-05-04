@@ -23,12 +23,13 @@ man9dir = $(mandir)/man9
 infodir = ${prefix}/info
 includedir = ${prefix}/include
 
-SHELL = /bin/sh
 
 INSTALL = /usr/bin/install -cpD
 INSTALL_PROGRAM = /usr/bin/install -cpsD
-INSTALL_DATA = /usr/bin/install -cp
+INSTALL_DATA = /bin/install -cp
 EXEEXT = 
+TEMP=mkstemp.o
+#TEMP=
 
 AR = ar
 AR_FLAGS = qv
@@ -36,9 +37,9 @@ MAKEINFO = makeinfo
 
 HDRS	      = defs.h
 
-CFLAGS	      = -g
+CFLAGS	      = -g -DNORAND
 
-MORE_CFLAGS   = -DNDEBUG  -DRETSIGTYPE=void 
+MORE_CFLAGS   = -DNDEBUG  -DRETSIGTYPE=void
 
 LDFLAGS	      =
 
@@ -50,7 +51,10 @@ MAKEFILE      = Makefile
 
 OBJS	      = closure.o \
 		error.o \
+		hardcode.o \
 		lalr.o \
+		lex.o \
+		ll1.o \
 		lr0.o \
 		main.o \
 		mkpar.o \
@@ -59,11 +63,11 @@ OBJS	      = closure.o \
 		skeleton.o \
 		symtab.o \
 		verbose.o \
-		warshall.o
+		warshall.o $(TEMP)
 
 PRINT	      = pr -f -l88
 
-PROGRAM	      = byacc$(EXEEXT)
+PROGRAM	      = byaccll$(EXEEXT)
 
 SRCS	      = closure.c \
 		error.c \
@@ -143,7 +147,7 @@ ls:
 
 force:
 
-Makefile: Makefile.in config.status
+Makefile: Makefile.in # config.status
 	$(SHELL) config.status
 
 config.status: configure
